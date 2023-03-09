@@ -39,8 +39,13 @@ def main():
     second_word = input("please enter the second word")
     try:
         result = reverse_concat(first_word, second_word)
+
+    except TypeError as error_message:
+        print(error_message)
+
     except ValueError as error_message:
         print(error_message)
+
     else:
         print(result)
 
