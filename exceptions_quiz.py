@@ -22,9 +22,9 @@ def reverse_concat(first_word, second_word):
     'This Is Reversed'
     """
     if type(first_word) is not str or type(second_word) is not str:
-        raise TypeError("Please input strings")
+        raise TypeError("Your inputs must be strings!")
     elif first_word == "" or second_word == "":
-        raise ValueError("Your inputs cannot be empty")
+        raise ValueError("Your inputted strings cannot be empty!")
     else:
         first_result = first_word + second_word
         final_result = (first_result[::-1])
