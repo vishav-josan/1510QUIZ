@@ -1,3 +1,19 @@
+def main():
+    """
+    Drive the program.
+    """
+
+
+first_word = input("please enter the first word")
+second_word = input("please enter the second word")
+    try:
+        reverse_concat(first_word, second_word)
+    except ValueError as e:
+        print(e)
+    else:
+        print("")
+if __name__ == "__main__":
+    main()
 def reverse_concat(first_word,second_word):
     """
     Concatenate and reverse first_word and second_word.
