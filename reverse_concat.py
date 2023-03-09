@@ -21,3 +21,9 @@ class TestReverseConcat(TestCase):
     def test_reverse_concat_type_error_second_word(self):
         with self.assertRaises(TypeError):
             reverse_concat("something new", True)
+
+    def test_reverse_concat_type_error_second_word_raises_value_error(self):
+        with self.assertRaises(TypeError):
+            reverse_concat(False, "")
+
+
